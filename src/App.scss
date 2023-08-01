@@ -1,0 +1,139 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding:0 20px ;
+}
+
+.title {
+  color: #8643dc;
+  font-size: 18px;
+  font-weight: 300;
+
+  @media (max-width: 768px) {
+    margin: 20px 0;
+}
+}
+
+.line {
+  margin-top: 3px;
+  width: 50%;
+  border: 1px solid #8643dc;
+}
+
+.pageTitle {
+  max-width: max-content;
+  @media (max-width: 768px) {
+    margin: 20px 0;
+}
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.aboutTitle {
+  white-space: wrap;
+  width: 40%;
+  font-size: 36px;
+  font-weight: 500;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.mail {
+  color: #8643dc;
+  font-size: 24px;
+}
+
+.messengers {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-self: center;
+  align-items: center;
+
+  .messengersTitle {
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+  .links {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+  @media (max-width: 768px) {
+    margin: 20px 0;
+}
+}
+
+.sendBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 768px) {
+      margin: 20px 0;
+  }
+}
+
+.send {
+    color: #fff;
+    padding: 20px 40px;
+    outline: none;
+    border: none;
+    background-color: #8643dc;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+.attachBox {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.succesful {
+  color: green;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+}
